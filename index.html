@@ -4,14 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shortly</title>
+  <title>Shortly  - URL shortening service</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>shortly</h1>
+  <header class="site-header">
+    <div class="site-header__container container">
+      <!-- LOGO -->
+      <a class="site-header__logo logo" href="#">
+        <img class="site-header__logo-img logo-img" src="./imgs/Shortly (1).svg" alt="logo" width="120" height="33">
+      </a>
+
+      <!-- SITE NAV -->
+      <nav class="site-header__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav-link" href="#">Features</a></li>
+          <li class="sitenav__item"><a class="sitenav-link" href="#">Pricing</a></li>
+          <li class="sitenav__item"><a class="sitenav-link" href="#">Resoures</a></li>
+        </ul>
+      </nav>
+
+      <!-- SITE header auth -->
+      <div class="site-header__auth">
+        <a class="site-header__login-link" href="#">LogIn</a>
+        <a class="button button--small" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
 
 
   <script src="js/main.js"></script>
