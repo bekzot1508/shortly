@@ -117,12 +117,12 @@ img {
 .button:active{
   opacity: 0.6;
 }
-.button--small {
+.button__small {
   padding: 8px 24px;
   font-size: 15px;
   line-height: 22.5px;
 }
-.button--big{
+.button__big{
   padding: 18px 40px 16px;
 }
 .button--rectangle{
@@ -213,6 +213,33 @@ img {
 .site-header__login-link:active{
   opacity: 0.6;
 }
+
+/* hero */
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
+  background-image: url(../imgs/working_with_computer\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 476px) top 30px;
+}
+.hero__inner {
+  max-width: 565px;
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: var(--text-color-dark);
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 36px;
+}
+
 
 
 
