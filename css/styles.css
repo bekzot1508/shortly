@@ -7,7 +7,17 @@
   --accent-color-hover: #9AE3E3;
   --light-bg: #EFF1F7;
   --dark-bg: #232127; 
+  --error-msg: #F46363;
 }
+
+/* placeholder */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder { 
+  color: #34313D;
+}
+ 
 
 /* FONTS */
 @font-face {
@@ -110,6 +120,7 @@ img {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  white-space: nowrap;
 }
 .button:hover{
   background-color: var(--accent-color-hover);
@@ -239,6 +250,80 @@ img {
   font-size: 22px;
   line-height: 36px;
 }
+
+
+/* index-url-shortener-features-wrapper  */
+.index-url-shortener-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+
+/* url-shortener */
+.url-shortener__form {
+  display: flex;
+  padding: 52px 64px;
+  border-radius: 10px;
+  background-color: #4B3F6B;
+  background-image: url(../imgs/Path\ 2\ \(1\).svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.url-shortener__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+.url-shortener__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  color: var(--text-color-dark);
+  font-size: 20px;
+  line-height: 36px;
+}
+.url-shortener__url-msg {
+  display: none;
+}
+
+.url-shortener__input:invalid {
+  border-color: var(--error-msg);
+  color: var(--error-msg);
+}
+
+.url-shortener__input ~ .url-shortener__url-msg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--error-msg);
+  font-style: italic;
+  letter-spacing: 0.11px;
+}
+
+/* .url-shortener__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--error-msg);
+  color: var(--error-msg);
+}
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortener__url-msg  {
+  display: block;
+  position: absolute;
+} */
+
+
+
 
 
 
